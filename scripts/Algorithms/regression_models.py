@@ -74,7 +74,7 @@ def main(dir_path, output_dir):
                 symbol, output_dir)
 
             scores[symbol] = [mean_squared_errors, r2_scores]
-        except Exception, e:
+        except Exception :
             pass
             traceback.print_exc()
     

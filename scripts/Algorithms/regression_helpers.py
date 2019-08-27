@@ -21,10 +21,10 @@ from sklearn.ensemble import GradientBoostingClassifier
 #from sklearn.svm import SVR
 from sklearn.feature_selection import SelectKBest, chi2
 from sklearn.svm import SVC, SVR
-from sklearn.qda import QDA
+from sklearn.discriminant_analysis import QuadraticDiscriminantAnalysis as QDA
 import os
-from sklearn.grid_search import GridSearchCV
-from Neural_Network import NeuralNet
+from sklearn.model_selection import learning_curve, GridSearchCV
+from scripts.Algorithms.Neural_Network  import NeuralNet
 
 def load_dataset(path_directory, symbol): 
     """
